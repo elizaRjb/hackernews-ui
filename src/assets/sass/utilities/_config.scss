@@ -1,0 +1,32 @@
+//Web Address
+$domain-name: 'www.phil.us';
+
+//Text
+$base__font-size: 16px;
+$base__line: 24px;
+
+//Font Stacks
+$font-family--primary: 'Arial', sans-serif;
+$font-family--secondary: 'Arial', sans-serif;
+
+//Colors
+$white: #fff;
+$black: #292a2e;
+
+//Breakpoints
+$sm-device: 576px;
+$md-device: 768px;
+$lg-device: 992px;
+$xl-device: 1200px;
+
+// Container max-widths
+$container-max-widths-map: (
+  small: 584px,
+  medium: 772px,
+  large: 964px,
+  extra-large: 1112px,
+) !default;
+
+//Path to Assets
+$path--rel: '../img';
+$path-font: '../fonts';
