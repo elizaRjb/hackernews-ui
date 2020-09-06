@@ -1,11 +1,13 @@
 import React from 'react';
 
-import Component from 'components/Component';
+import Header from 'components/header/Header';
+
+import 'assets/sass/style.css';
 
 function App() {
   return (
     <div className="App">
-      <Component />
+      <Header />
     </div>
   );
 }
