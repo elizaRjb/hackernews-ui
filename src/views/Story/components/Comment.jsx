@@ -24,19 +24,18 @@ class Comment extends Component {
   render() {
     const { commentData, isLoading } = this.state;
 
-    if (isLoading) return <span>Loading...</span>;
-
-    if (commentData) {
-      return (
-        <div className="comment">
-          <p className="comment__user">{commentData.by}:</p>
-          <p className="comment__text" dangerouslySetInnerHTML={{ __html: commentData.text }} />
-          {commentData.kids && commentData.kids.map(id => <Comment id={id} key={id} />)}
-        </div>
-      );
-    }
-
-    return null;
+    return (
+      <div className="comment">
+        {isLoading && <span>Loading...</span>}
+        {commentData && (
+          <div>
+            <p className="comment__user">{commentData.by}:</p>
+            <p className="comment__text" dangerouslySetInnerHTML={{ __html: commentData.text }} />
+            {commentData.kids && commentData.kids.map(id => <Comment id={id} key={id} />)}
+          </div>
+        )}
+      </div>
+    );
   }
 }
 
