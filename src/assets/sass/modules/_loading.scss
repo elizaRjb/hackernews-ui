@@ -1,0 +1,32 @@
+.loading {
+  @include e(top) {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 4px;
+    background-color: $mischka;
+    animation: loading-animation 2s linear infinite;
+  }
+
+  @include e(item) {
+    display: inline-block;
+    width: 20%;
+    height: 20px;
+    margin-right: 5px;
+    background-color: $mischka;
+    animation: loading-animation 2s linear infinite;
+  }
+}
+
+@include keyframes(loading-animation) {
+  0% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}

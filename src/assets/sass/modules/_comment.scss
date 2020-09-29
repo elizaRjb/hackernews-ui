@@ -1,0 +1,16 @@
+.comment {
+  padding: 8px 8px 8px 16px;
+  border-left: 1px dashed $mischka;
+  font: normal normal 14px/1.35 $font-family--secondary;
+
+  @include e(user) {
+    color: $rolling-stone;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  @include e(text) {
+    margin-top: 8px;
+    font-size: 16px;
+  }
+}

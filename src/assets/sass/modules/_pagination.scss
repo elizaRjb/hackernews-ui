@@ -1,0 +1,35 @@
+.pagination {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  color: $rolling-stone;
+  justify-content: space-between;
+  font: normal normal 14px/1.5 $font-family--secondary;
+
+  @include e(btn) {
+    width: 60px;
+    padding: 4px 12px;
+    background-color: transparent;
+    border: 1px solid $moody-blue;
+    border-radius: 2px;
+    color: $moody-blue;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $moody-blue;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+
+      &:hover,
+      &:focus {
+        color: $moody-blue;
+        background-color: transparent;
+      }
+    }
+  }
+}

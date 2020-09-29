@@ -1,0 +1,26 @@
+.story {
+  @include e(top-section) {
+    margin-bottom: 20px;
+    font: normal italic 14px $font-family--secondary;
+
+    a {
+      color: $moody-blue;
+      margin-bottom: 8px;
+      display: inline-block;
+      font: normal bold 18px/1.3 $font-family--primary;
+    }
+
+    span {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+
+  @include e(comment-section) {
+    h4 {
+      color: $black;
+      margin-bottom: 15px;
+      font: normal normal 16px $font-family--primary;
+    }
+  }
+}
